@@ -1,0 +1,41 @@
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--color-ink);
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+.page__title {
+    display: inline-block;
+    margin-bottom: 0.5em;
+    padding: 0 0.15em;
+    font-family: var(--font-hand);
+    font-size: 2.6em;
+    font-weight: 400;
+    line-height: 1;
+    background: linear-gradient(
+        transparent 60%,
+        color-mix(in srgb, var(--accent) 65%, transparent) 60% 90%,
+        transparent 90%
+    );
+}
+
+.highlight {
+    color: inherit;
+    background: linear-gradient(transparent 55%, var(--color-mustard) 55%);
+}
+
+/* Each page gets its own accent, matching its index tab */
+.page--profile { --accent: var(--color-mustard); }
+.page--about { --accent: var(--color-pink); }
+.page--skills { --accent: var(--color-mustard); }
+.page--education { --accent: var(--color-sky); }
+.page--experience { --accent: var(--color-sage); }
+.page--projects { --accent: var(--color-tomato); }
+.page--hello,
+.page--contact { --accent: var(--color-lilac); }

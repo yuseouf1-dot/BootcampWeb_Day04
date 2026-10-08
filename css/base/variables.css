@@ -1,0 +1,37 @@
+:root {
+    /* Desk & binder */
+    --color-desk: #e8dfd1;
+    --color-desk-line: rgba(120, 98, 70, 0.08);
+    --color-cover: #3f5446;
+    --color-cover-dark: #2a382f;
+
+    /* Paper & ink */
+    --color-paper: #fcf9f2;
+    --color-paper-line: #e2dacb;
+    --color-ink: #2d2a26;
+    --color-ink-muted: #6e675d;
+
+    /* Accents (tabs, tapes, tickets) */
+    --color-tomato: #e2583e;
+    --color-mustard: #e9b44c;
+    --color-sage: #8fae8b;
+    --color-sky: #8fb8de;
+    --color-pink: #f0b8b8;
+    --color-lilac: #bba8dc;
+    --color-note: #fff2a8;
+
+    /* Typography */
+    --font-body: "Gowun Dodum", system-ui, sans-serif;
+    --font-hand: "Nanum Pen Script", cursive;
+    --font-mono: "Space Mono", ui-monospace, monospace;
+
+    /* Binder geometry: A5 ratio (148 x 210 mm) */
+    --page-ratio: 1.414;
+    --page-w: min(36vw, calc(80vh / var(--page-ratio)));
+    --page-h: calc(var(--page-w) * var(--page-ratio));
+
+    /* Motion: keep --flip-duration in sync with FLIP_DURATION in js/modules/book.js */
+    --flip-duration: 900ms;
+    --flip-easing: cubic-bezier(0.645, 0.045, 0.355, 1);
+    --transition-fast: 0.25s ease;
+}

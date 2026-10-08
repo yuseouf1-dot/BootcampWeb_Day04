@@ -1,0 +1,119 @@
+/* Airmail-striped postcard */
+.postcard {
+    padding: 0.45em;
+    background: repeating-linear-gradient(
+        135deg,
+        var(--color-tomato) 0 0.8em,
+        #fff 0.8em 1.6em,
+        var(--color-sky) 1.6em 2.4em,
+        #fff 2.4em 3.2em
+    );
+    box-shadow: 0 0.3em 0.8em rgba(0, 0, 0, 0.15);
+    transform: rotate(-1.5deg);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.postcard:hover {
+    transform: rotate(0) translateY(-0.3em);
+    box-shadow: 0 0.9em 1.4em rgba(0, 0, 0, 0.2);
+}
+
+.postcard__inner {
+    position: relative;
+    padding: 1.2em;
+    background-color: #fffdf8;
+}
+
+.postcard__message {
+    padding-bottom: 0.8em;
+    border-bottom: 1px dashed var(--color-ink-muted);
+    font-family: var(--font-hand);
+    font-size: 1.4em;
+    line-height: 1.35;
+}
+
+/* Floated into the top-right corner so the message wraps around the postmark */
+.postcard__marks {
+    float: right;
+    margin: -0.6em -0.6em 0.3em 0.6em;
+}
+
+.postmark {
+    display: grid;
+    place-items: center;
+    width: 4.4em;
+    height: 4.4em;
+    border: 0.15em double var(--color-ink);
+    border-radius: 50%;
+    font-family: var(--font-mono);
+    font-size: 0.6em;
+    letter-spacing: 0.1em;
+    opacity: 0.45;
+    transform: rotate(-18deg);
+}
+
+.contact-list {
+    clear: both;
+    padding-top: 0.6em;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6em;
+    padding: 0.35em 0;
+    border-bottom: 1px solid var(--color-paper-line);
+    font-size: 0.85em;
+}
+
+.contact-list__label {
+    flex: 0 0 5.2em;
+    font-family: var(--font-mono);
+    font-size: 0.8em;
+    color: var(--color-ink-muted);
+}
+
+.contact-list a {
+    overflow-wrap: anywhere;
+    background: linear-gradient(var(--color-lilac), var(--color-lilac)) left bottom / 0 0.35em no-repeat;
+    transition: background-size var(--transition-fast);
+}
+
+.contact-list a:hover,
+.contact-list a:focus-visible {
+    background-size: 100% 0.35em;
+}
+
+/* Kraft luggage tag (download link) */
+.luggage-tag {
+    position: relative;
+    display: inline-block;
+    margin-top: 1.6em;
+    padding: 0.5em 1.2em 0.5em 2.2em;
+    border-radius: 0.3em 1.4em 1.4em 0.3em;
+    font-family: var(--font-hand);
+    font-size: 1.3em;
+    background-color: #d8b98a;
+    box-shadow: 0 0.15em 0.3em rgba(0, 0, 0, 0.2);
+    transform: rotate(2deg);
+    transform-origin: 0.9em 50%;
+    transition: transform var(--transition-fast);
+}
+
+.luggage-tag::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0.7em;
+    width: 0.55em;
+    height: 0.55em;
+    margin-top: -0.275em;
+    border: 0.12em solid #fff;
+    border-radius: 50%;
+    background-color: var(--color-paper);
+}
+
+.luggage-tag:hover,
+.luggage-tag:focus-visible {
+    transform: rotate(-6deg);
+}

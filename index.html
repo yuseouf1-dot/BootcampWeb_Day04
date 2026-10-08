@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="박세연(SeYeon Park)의 온라인 이력서 - A5 바인더 다이어리">
+    <title>SeYeon Park | Resume</title>
+
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&amp;family=Nanum+Pen+Script&amp;family=Space+Mono:wght@400;700&amp;display=swap">
+
+    <link rel="stylesheet" href="css/base/reset.css">
+    <link rel="stylesheet" href="css/base/variables.css">
+    <link rel="stylesheet" href="css/base/typography.css">
+    <link rel="stylesheet" href="css/layout/desk.css">
+    <link rel="stylesheet" href="css/layout/binder.css">
+    <link rel="stylesheet" href="css/layout/tabs.css">
+    <link rel="stylesheet" href="css/components/paper.css">
+    <link rel="stylesheet" href="css/components/tickets.css">
+    <link rel="stylesheet" href="css/components/postcard.css">
+    <link rel="stylesheet" href="css/components/form.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <svg class="svg-defs" aria-hidden="true">
+        <symbol id="icon-clip" viewBox="0 0 26 62">
+            <path d="M9 22V48a4 4 0 0 0 8 0V12a6 6 0 0 0-12 0V50a8 8 0 0 0 16 0V20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        </symbol>
+    </svg>
+
+    <div class="desk">
+        <main class="binder">
+            <nav class="tabs" aria-label="이력서 목차">
+                <ul class="tabs__list">
+                    <li><a class="tab tab--about" href="#about">About</a></li>
+                    <li><a class="tab tab--skills" href="#skills">Skills</a></li>
+                    <li><a class="tab tab--education" href="#education">Education</a></li>
+                    <li><a class="tab tab--experience" href="#experience">Experience</a></li>
+                    <li><a class="tab tab--projects" href="#projects">Projects</a></li>
+                    <li><a class="tab tab--contact" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="rings" aria-hidden="true">
+                <span class="ring"></span>
+                <span class="ring"></span>
+                <span class="ring"></span>
+                <span class="ring"></span>
+                <span class="ring"></span>
+                <span class="ring"></span>
+            </div>
+
+            <!-- Spread 1 : Profile | About -->
+            <section class="page page--left page--base page--profile" id="profile" aria-labelledby="profile-name">
+                <figure class="polaroid">
+                    <span class="tape tape--pink" aria-hidden="true"></span>
+                    <div class="polaroid__photo">
+                        <img src="assets/images/img1.jpg" alt="profile">
+                        <!-- <span class="polaroid__placeholder">SY</span> -->
+                    </div>
+                    <figcaption class="polaroid__caption">Nice to meet you!</figcaption>
+                </figure>
+
+                <h1 class="profile__name" id="profile-name">박세연 <span class="profile__name-en">SeYeon Park</span></h1>
+                <p class="profile__role"><mark class="highlight">Junior Web Developer</mark></p>
+                <p class="profile__tagline">I love to record, build, and keep learning.</p>
+
+                <ul class="stickers" aria-label="키워드">
+                    <li class="sticker sticker--sky">Curious</li>
+                    <li class="sticker sticker--mustard">Team Player</li>
+                    <li class="sticker sticker--sage">Detail Lover</li>
+                </ul>
+                <p class="page__number">1</p>
+            </section>
+
+            <div class="leaf">
+                <section class="page page--right page--about" id="about" aria-labelledby="about-title">
+                    <h2 class="page__title" id="about-title">About me</h2>
+                    <div class="lined">
+                        <p>🌍 Global Explorer: Currently studying CS in Paris, always open to new environments.</p>
+                        <p>🛠️ Problem Solver: Enjoying the process of structuring data and optimizing algorithms.</p>
+                        <p>⏱️ Disciplined Mind: Finding daily balance and stamina through Kumdo and running.</p>
+                    </div>
+
+                    <aside class="sticky-note">
+                        <span class="tape tape--sky" aria-hidden="true"></span>
+                        <h3 class="sticky-note__title">Quick facts</h3>
+                        <dl class="facts">
+                            <div class="facts__row"><dt>Based in</dt><dd>South Korea</dd></div>
+                            <div class="facts__row"><dt>Languages</dt><dd>Korean, English</dd></div>
+                            <div class="facts__row"><dt>Hobby</dt><dd>Journaling, kendo</dd></div>
+                        </dl>
+                    </aside>
+                    <p class="page__number">2</p>
+                </section>
+
+                <!-- Spread 2 : Skills | Education -->
+                <section class="page page--left page--skills" id="skills" aria-labelledby="skills-title">
+                    <h2 class="page__title" id="skills-title">Skills</h2>
+
+                    <div class="skill-group skill-group--lang">
+                        <h3 class="skill-group__title">Languages</h3>
+                        <dl class="skill-rows">
+                            <div class="skill-row">
+                                <dt>Backend / System</dt>
+                                <dd>
+                                    <ul class="labels">
+                                        <li class="label">Java</li>
+                                        <li class="label">Kotlin</li>
+                                        <li class="label">Python</li>
+                                        <li class="label">C</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="skill-row">
+                                <dt>Web</dt>
+                                <dd>
+                                    <ul class="labels">
+                                        <li class="label">HTML</li>
+                                        <li class="label">CSS</li>
+                                        <li class="label">JavaScript</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                        </dl>
+                    </div>
+
+                    <div class="skill-group skill-group--backend">
+                        <h3 class="skill-group__title">Backend &amp; Database</h3>
+                        <dl class="skill-rows">
+                            <div class="skill-row">
+                                <dt>Frameworks</dt>
+                                <dd>
+                                    <ul class="labels">
+                                        <li class="label">Spring Boot</li>
+                                        <li class="label">Spring WebFlux</li>
+                                        <li class="label">Node.js</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="skill-row">
+                                <dt>Database</dt>
+                                <dd>
+                                    <ul class="labels">
+                                        <li class="label">MySQL</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                        </dl>
+                    </div>
+
+                    <div class="skill-group skill-group--infra">
+                        <h3 class="skill-group__title">Infra &amp; Tools</h3>
+                        <dl class="skill-rows">
+                            <div class="skill-row">
+                                <dt>Version Control</dt>
+                                <dd>
+                                    <ul class="labels">
+                                        <li class="label">Git</li>
+                                        <li class="label">GitHub</li>
+                                        <li class="label">SourceTree</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="skill-row">
+                                <dt>Env &amp; Deploy</dt>
+                                <dd>
+                                    <ul class="labels">
+                                        <li class="label">Linux / Ubuntu</li>
+                                        <li class="label">Docker</li>
+                                        <li class="label">Docker Compose</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="skill-row">
+                                <dt>IDE</dt>
+                                <dd>
+                                    <ul class="labels">
+                                        <li class="label">VS Code</li>
+                                        <li class="label">IntelliJ</li>
+                                        <li class="label">Eclipse</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                        </dl>
+                    </div>
+                    <p class="page__number">3</p>
+                </section>
+            </div>
+
+            <div class="leaf">
+                <section class="page page--right page--education" id="education" aria-labelledby="education-title">
+                    <h2 class="page__title" id="education-title">Education</h2>
+
+                    <article class="pinned">
+                        <svg class="clip" aria-hidden="true"><use href="#icon-clip"></use></svg>
+                        <div class="pinned__item">
+                            <div class="boarding-pass">
+                                <div class="boarding-pass__main">
+                                    <p class="boarding-pass__header"><span>BOARDING PASS</span><span>CLASS B.S.</span></p>
+                                    <p class="boarding-pass__route">
+                                        <span>HS</span>
+                                        <span class="boarding-pass__plane" aria-hidden="true">&#9992;&#xFE0E;</span>
+                                        <span>UNI</span>
+                                    </p>
+                                    <h3 class="boarding-pass__title">YNU</h3>
+                                    <dl class="boarding-pass__info">
+                                        <div><dt>Date</dt><dd>2024 ~ 2028</dd></div>
+                                        <div><dt>Major</dt><dd>SW</dd></div>
+                                        <div><dt>Status</dt><dd>Enrolled</dd></div>
+                                    </dl>
+                                </div>
+                                <div class="boarding-pass__stub">
+                                    <p class="boarding-pass__gate"><span>GATE</span>A1</p>
+                                    <span class="barcode" aria-hidden="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="pinned">
+                        <svg class="clip" aria-hidden="true"><use href="#icon-clip"></use></svg>
+                        <div class="pinned__item">
+                            <div class="boarding-pass boarding-pass--tomato">
+                                <div class="boarding-pass__main">
+                                    <p class="boarding-pass__header"><span>BOARDING PASS</span><span>BOOTCAMP</span></p>
+                                    <p class="boarding-pass__route">
+                                        <span>YNU</span>
+                                        <span class="boarding-pass__plane" aria-hidden="true">&#9992;&#xFE0E;</span>
+                                        <span>EPI</span>
+                                    </p>
+                                    <h3 class="boarding-pass__title">Epitech</h3>
+                                    <dl class="boarding-pass__info">
+                                        <div><dt>Date</dt><dd>9.14 ~ 12.19</dd></div>
+                                        <div><dt>Course</dt><dd>DIT</dd></div>
+                                        <div><dt>Status</dt><dd>Boarding</dd></div>
+                                    </dl>
+                                </div>
+                                <div class="boarding-pass__stub">
+                                    <p class="boarding-pass__gate"><span>GATE</span>W4</p>
+                                    <span class="barcode" aria-hidden="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="page__number">4</p>
+                </section>
+
+                <!-- Spread 3 : Experience | Projects -->
+                <section class="page page--left page--experience" id="experience" aria-labelledby="experience-title">
+                    <h2 class="page__title" id="experience-title">Experience</h2>
+
+                    <article class="pinned">
+                        <span class="tape tape--mustard" aria-hidden="true"></span>
+                        <div class="pinned__item">
+                            <div class="ticket">
+                                <p class="ticket__side">ADMIT ONE</p>
+                                <div class="ticket__body">
+                                    <p class="ticket__venue">Activity</p>
+                                    <h3 class="ticket__title">Vibe Coding Curriculum Designer</h3>
+                                    <p class="ticket__desc">Co-designed a university-level introductory syllabus for AI-assisted development (Vibe Coding) and prompt engineering.</p>
+                                    <p class="ticket__footer"><span>2026.03 — 2026.06</span><span>No. 0001</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="pinned">
+                        <span class="tape tape--sky" aria-hidden="true"></span>
+                        <div class="pinned__item">
+                            <div class="ticket ticket--sage">
+                                <p class="ticket__side">ADMIT ONE</p>
+                                <div class="ticket__body">
+                                    <p class="ticket__venue">Global Experience</p>
+                                    <h3 class="ticket__title">EPITECH Academic Exchange (Paris, France)</h3>
+                                    <p class="ticket__desc">Currently studying software engineering in a global environment.</p>
+                                    <p class="ticket__footer"><span>2026.09 — 2027.01</span><span>No. 0002</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="page__number">5</p>
+                </section>
+            </div>
+
+            <div class="leaf">
+                <section class="page page--right page--projects" id="projects" aria-labelledby="projects-title">
+                    <h2 class="page__title" id="projects-title">Projects</h2>
+
+                    <div class="receipts">
+                        <article class="pinned">
+                            <svg class="clip" aria-hidden="true"><use href="#icon-clip"></use></svg>
+                            <div class="pinned__item">
+                                <div class="receipt">
+                                    <p class="receipt__store">*** RECEIPT ***</p>
+                                    <p class="receipt__meta">2026-04-06 · #0001</p>
+                                    <h3 class="receipt__title">Microservices Web Application</h3>
+                                    <p class="receipt__desc">Developed a delivery matching and food review platform using a microservices architecture.</p>
+                                    <ul class="receipt__items">
+                                        <li><span>Kotlin</span><span>x1</span></li>
+                                        <li><span>Spring Boot</span><span>x1</span></li>
+                                        <li><span>Spring WebFlux</span><span>x1</span></li>
+                                        <li><span>MySQL</span><span>x1</span></li>
+                                        <li><span>Docker Compose</span><span>x1</span></li>
+                                    </ul>
+                                    <p class="receipt__total"><span>TOTAL</span><span>2 MONTHS</span></p>
+                                    <a class="receipt__link" href="https://github.com/yuseouf1-dot/nbbang_mate">View code &rarr;</a>
+                                    <span class="barcode" aria-hidden="true"></span>
+                                    <p class="receipt__thanks">THANK YOU!</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="pinned">
+                            <span class="tape tape--pink" aria-hidden="true"></span>
+                            <div class="pinned__item">
+                                <div class="receipt">
+                                    <p class="receipt__store">*** RECEIPT ***</p>
+                                    <p class="receipt__meta">2026-10-07 · #0002</p>
+                                    <h3 class="receipt__title">BootcampWeb_Day03</h3>
+                                    <p class="receipt__desc">Developed a simple web application for managing bootcamp projects.</p>
+                                    <ul class="receipt__items">
+                                        <li><span>HTML</span><span>x1</span></li>
+                                        <li><span>CSS</span><span>x1</span></li>
+                                    </ul>
+                                    <p class="receipt__total"><span>TOTAL</span><span>1 DAY</span></p>
+                                    <a class="receipt__link" href="https://github.com/yuseouf1-dot/BootcampWeb_Day03">View code &rarr;</a>
+                                    <span class="barcode" aria-hidden="true"></span>
+                                    <p class="receipt__thanks">THANK YOU!</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <p class="page__number">6</p>
+                </section>
+
+                <!-- Spread 4 : Say hello | Contact -->
+                <section class="page page--left page--hello" id="say-hello" aria-labelledby="hello-title">
+                    <h2 class="page__title" id="hello-title">Say hello</h2>
+
+                    <div class="postcard">
+                        <div class="postcard__inner">
+                            <span class="postcard__marks" aria-hidden="true">
+                                <span class="postmark">EPITECH</span>
+                            </span>
+                            <p class="postcard__message">
+                                To. My visitors,<br><br>
+                                Thank you for flipping through my diary to the very end! Please feel free to reach out :)<br><br>
+                                From. seyeon park
+                            </p>
+                            <ul class="contact-list">
+                                <li><span class="contact-list__label">Email</span><a href="mailto:seyeon.park@epitech.eu">seyeon.park@epitech.eu</a></li>
+                                <li><span class="contact-list__label">GitHub</span><a href="https://github.com/yuseouf1-dot">github.com/yuseouf1-dot</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <a class="luggage-tag" href="assets/docs/cv.md" download>download cv.md</a>
+                    <p class="page__number">7</p>
+                </section>
+            </div>
+
+            <section class="page page--right page--base page--contact" id="contact" aria-labelledby="contact-title">
+                <h2 class="page__title" id="contact-title">Write to me</h2>
+
+                <form class="letter" id="contact-form" action="#" method="post" novalidate>
+                    <p class="letter__greeting">Dear SeYeon,</p>
+                    <div class="form__group">
+                        <label class="form__label" for="name">Your name</label>
+                        <input class="form__input" type="text" id="name" name="name" autocomplete="name" required>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="email">Your email</label>
+                        <input class="form__input" type="email" id="email" name="email" autocomplete="email" required>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="message">Message</label>
+                        <textarea class="form__input form__input--area" id="message" name="message" rows="3" required></textarea>
+                    </div>
+                    <div class="form__actions">
+                        <p class="form__status" role="status" aria-live="polite"></p>
+                        <button class="seal-btn" type="submit">SEND</button>
+                    </div>
+                </form>
+                <p class="page__number">8</p>
+            </section>
+
+            <button class="turn-btn turn-btn--prev" type="button" aria-label="이전 페이지" title="이전 페이지"></button>
+            <button class="turn-btn turn-btn--next" type="button" aria-label="다음 페이지" title="다음 페이지"></button>
+        </main>
+
+        <footer class="desk__footer">
+            <p class="desk__hint">Click on the corners of tabs or pages, or use the &larr; &rarr; keys to navigate.</p>
+            <p>&copy; 2026 SeYeon Park</p>
+        </footer>
+    </div>
+
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>

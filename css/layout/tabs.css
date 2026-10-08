@@ -1,0 +1,49 @@
+/* Index tabs peeking out from behind the right cover */
+.tabs {
+    position: absolute;
+    top: 6%;
+    left: calc(100% + 0.6em);
+    z-index: -1;
+}
+
+.tabs__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+}
+
+.tab {
+    display: block;
+    width: 6.2em;
+    padding: 0.35em 0.6em 0.35em 1.4em;
+    border-radius: 0 0.6em 0.6em 0;
+    font-family: var(--font-hand);
+    font-size: 1.35em;
+    line-height: 1.2;
+    background-color: var(--tab-color);
+    box-shadow: 0.1em 0.15em 0.3em rgba(0, 0, 0, 0.2);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.tab:hover,
+.tab:focus-visible {
+    transform: translateX(0.4em);
+}
+
+.tab:focus-visible {
+    outline: 2px solid var(--color-ink);
+    outline-offset: 2px;
+}
+
+.tab.is-active {
+    transform: translateX(0.8em);
+    font-weight: 700;
+    box-shadow: 0.2em 0.25em 0.5em rgba(0, 0, 0, 0.25);
+}
+
+.tab--about { --tab-color: var(--color-pink); }
+.tab--skills { --tab-color: var(--color-mustard); }
+.tab--education { --tab-color: var(--color-sky); }
+.tab--experience { --tab-color: var(--color-sage); }
+.tab--projects { --tab-color: var(--color-tomato); }
+.tab--contact { --tab-color: var(--color-lilac); }
