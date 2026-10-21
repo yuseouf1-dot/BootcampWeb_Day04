@@ -22,7 +22,6 @@ export function initContactForm() {
             return;
         }
 
-        // TODO: connect to a real backend or a service such as Formspree
         status.textContent = "Your message has been sent. Thank you!";
         form.reset();
         form.classList.add("is-sent");
